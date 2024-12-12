@@ -34,7 +34,7 @@ export default [
       ...pluginReact.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
-      'prettier/prettier': ['error', { endOfLine: 'lf' }],
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
   },
 ];
