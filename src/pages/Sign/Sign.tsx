@@ -1,7 +1,7 @@
-import '@/styles/global/Sign.css';
-import RightImages from '@/components/RightImages.js';
-import SignInSignUp from './SignInSignUp.jsx';
-import SvgCircle from '../../components/SvgCircle.jsx';
+import '@/Sign.css';
+import RightImages from '@/features/Auth/RightImages.js';
+import SignInSignUp from '@/features/Auth/SignInSignUp.js';
+import SvgCircle from '@/features/Auth/SvgCircle';
 import { useAppSelector } from '@/hooks/useAppSelector';
 
 function Sign() {

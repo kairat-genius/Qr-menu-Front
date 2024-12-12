@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import signSlice from './slices/signSlice';
+import signSlice from '../features/Auth/signSlice';
 
 export const store = configureStore({
   reducer: {
