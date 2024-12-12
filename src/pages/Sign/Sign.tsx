@@ -1,20 +1,23 @@
-import { useState } from 'react';
-import '@/styles/global/Sign.css';
-import RightImages from '../../components/Auth/RightImages.jsx';
-import SignInSignUp from './SignInSignUp.jsx';
-import SvgCircle from '../../components/SvgCircle.jsx';
+// import { useState } from 'react';
+// import '@/styles/global/Sign.css';
+// import RightImages from '../../components/Auth/RightImages.jsx';
+// import SignInSignUp from './SignInSignUp.jsx';
+// import SvgCircle from '../../components/SvgCircle.jsx';
+import { useAppSelector } from '@/hooks/useAppSelector';
 
 function Sign() {
-  const [signCheck, setSignCheck] = useState('in');
-  function handleSignCheck(signStatus: string): void {
-    setSignCheck(value);
-  }
+  const isSign = useAppSelector((state) => state.sign.isSign);
+  console.log(isSign);
+  // const [signCheck, setSignCheck] = useState('in');
+  // function handleSignCheck(signStatus: string): void {
+  //   setSignCheck(value);
+  // }
 
-  const slideCircleClass = 'up';
+  // const slideCircleClass = 'up';
 
   return (
     <>
-      <main>
+      {/* <main>
         <div id="sign">
           {(signCheck === 'in' && (
             <SignInSignUp page={signCheck} handleSignCheck={handleSignCheck} />
@@ -35,7 +38,7 @@ function Sign() {
         ) : (
           <RightImages page={signCheck} />
         )}
-      </main>
+      </main> */}
     </>
   );
 }
