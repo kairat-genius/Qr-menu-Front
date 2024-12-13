@@ -1,5 +1,6 @@
-@use '../../scss/abstracts/' as *;
-.sidebaritem {
+@use '@/styles/abstracts/' as *;
+
+.sidebarItem {
   align-items: center;
   padding: 15px 54px 15px 30px;
   width: 184px;

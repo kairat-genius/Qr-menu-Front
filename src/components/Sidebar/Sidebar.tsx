@@ -1,12 +1,12 @@
-import styles from './Sidebar.module.css';
+import styles from './Sidebar.module.scss';
 import { useState } from 'react';
 import { SidebarItem } from './SidebarItem';
-import { HomeIcon } from '../../assets/HomeIcon.jsx';
-import { TablesIcon } from '../../assets/TablesIcon.jsx';
-import { MenuIcon } from '../../assets/MenuIcon.jsx';
-import { SettingsIcon } from '../../assets/SettingsIcon.jsx';
-import { SupportIcon } from '../../assets/SupportIcon.jsx';
-import LogoImg from '../LogoImg/LogoImg.jsx';
+import { HomeIcon } from '@/assets/HomeIcon';
+import { TablesIcon } from '@/assets/TablesIcon.jsx';
+import { MenuIcon } from '@/assets/MenuIcon.jsx';
+import { SettingsIcon } from '@/assets/SettingsIcon.jsx';
+import { SupportIcon } from '@/assets/SupportIcon.jsx';
+import LogoImg from '../LogoImg/LogoImg';
 import { Link } from 'react-router-dom';
 
 export const Sidebar = () => {
