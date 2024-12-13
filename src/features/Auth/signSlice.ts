@@ -1,7 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+type isSignType = 'in' | 'up' | 'reset';
+
 interface SignState {
-  isSign: string;
+  isSign: isSignType;
 }
 
 const initialState: SignState = {
@@ -12,7 +14,7 @@ export const signSlice = createSlice({
   name: 'sign',
   initialState,
   reducers: {
-    setSign: (state, action: PayloadAction<string>) => {
+    setSign: (state, action: PayloadAction<isSignType>) => {
       state.isSign = action.payload;
     },
   },
