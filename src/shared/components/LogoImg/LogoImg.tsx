@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 // import getFullInfoRestaurant from '../../Fetch/getFullInfoRestaurant';
-function LogoImg() {
+const LogoImg = () => {
   //   const [restaurantLogo, setRestaurantLogo] = useState('');
   // useEffect(() => {
   //   getFullInfoRestaurant()
@@ -93,6 +93,6 @@ function LogoImg() {
       {fileUploadStatus === 'error' && <p>Помилка завантаження файлу!</p>} */}
     </div>
   );
-}
+};
 
 export default LogoImg;

@@ -1,13 +1,13 @@
 import styles from './AppLayout.module.scss';
-import HeaderSystem from '@/components/Header/HeaderSystem';
-import { Sidebar } from '@/components/Sidebar/Sidebar';
+import HeaderSystem from '@/shared/components/Header/HeaderSystem';
+import Sidebar from '@/shared/components/Sidebar/Sidebar';
 import { useLocation } from 'react-router-dom';
 
 interface AppLayoutProps {
   children: React.ReactNode;
 }
 
-export const AppLayout = ({ children }: AppLayoutProps) => {
+const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const location = useLocation();
   if (location.pathname !== '/') {
     return (
@@ -35,3 +35,5 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
     );
   }
 };
+
+export default AppLayout;

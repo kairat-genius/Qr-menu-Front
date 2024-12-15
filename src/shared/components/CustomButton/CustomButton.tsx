@@ -13,7 +13,7 @@ interface ButtonProps {
   variant?: string;
 }
 
-function CustomButton({
+const CustomButton: React.FC<ButtonProps> = ({
   onClick,
   children,
   className,
@@ -21,7 +21,7 @@ function CustomButton({
   size,
   leftIcon,
   variant,
-}: ButtonProps) {
+}) => {
   const handleClick = () => {
     if (onClick && !disabled) {
       onClick();
@@ -42,6 +42,6 @@ function CustomButton({
       {children}
     </button>
   );
-}
+};
 
 export default CustomButton;

@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import signSlice from '../features/Auth/signSlice';
+import authSlice from '../features/Auth/authSlice';
 
 export const store = configureStore({
   reducer: {
-    sign: signSlice,
+    auth: authSlice,
   },
 });
 

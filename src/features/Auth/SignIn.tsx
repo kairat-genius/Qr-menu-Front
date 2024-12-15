@@ -183,6 +183,7 @@
 
 // export default SignIn;
 
-export default function SignIn() {
+const SignIn = () => {
   return <>Sign</>;
-}
+};
+export default SignIn;

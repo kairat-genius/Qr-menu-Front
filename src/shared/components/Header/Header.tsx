@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 // import { logout } from './logout/exit';
 
-function Header() {
+const Header = () => {
   //onClick={logout}
   return (
     <>
@@ -13,5 +13,5 @@ function Header() {
       </div>
     </>
   );
-}
+};
 export default Header;

@@ -7,7 +7,7 @@ interface SidebarItemProps {
   children: string;
 }
 
-export function SidebarItem({ icon, path, children }: SidebarItemProps) {
+const SidebarItem: React.FC<SidebarItemProps> = ({ icon, path, children }) => {
   return (
     <div className={styles.sidebarItem}>
       <Link to={path}>
@@ -18,4 +18,6 @@ export function SidebarItem({ icon, path, children }: SidebarItemProps) {
       </Link>
     </div>
   );
-}
+};
+
+export default SidebarItem;

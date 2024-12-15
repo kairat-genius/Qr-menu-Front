@@ -10,8 +10,8 @@ const initialState: SignState = {
   isSign: 'in',
 };
 
-export const signSlice = createSlice({
-  name: 'sign',
+export const authSlice = createSlice({
+  name: 'auth',
   initialState,
   reducers: {
     setSign: (state, action: PayloadAction<isSignType>) => {
@@ -20,5 +20,5 @@ export const signSlice = createSlice({
   },
 });
 
-export const { setSign } = signSlice.actions;
-export default signSlice.reducer;
+export const { setSign } = authSlice.actions;
+export default authSlice.reducer;

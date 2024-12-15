@@ -1,6 +1,6 @@
 import styles from './Sidebar.module.scss';
 import { useState } from 'react';
-import { SidebarItem } from './SidebarItem';
+import SidebarItem from './SidebarItem';
 import { HomeIcon } from '@/assets/HomeIcon';
 import { TablesIcon } from '@/assets/TablesIcon.jsx';
 import { MenuIcon } from '@/assets/MenuIcon.jsx';
@@ -9,7 +9,7 @@ import { SupportIcon } from '@/assets/SupportIcon.jsx';
 import LogoImg from '../LogoImg/LogoImg';
 import { Link } from 'react-router-dom';
 
-export const Sidebar = () => {
+const Sidebar = () => {
   const [isOpenCategor, setIsOpenCategor] = useState(false);
   const openCategor = () => {
     setIsOpenCategor(!isOpenCategor);
@@ -57,3 +57,5 @@ export const Sidebar = () => {
     </aside>
   );
 };
+
+export default Sidebar;

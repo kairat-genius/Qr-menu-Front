@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
-function HeaderSystem() {
+const HeaderSystem = () => {
   return (
     <div className={styles.headsystem}>
       <div>
@@ -16,6 +16,6 @@ function HeaderSystem() {
       </div>
     </div>
   );
-}
+};
 
 export default HeaderSystem;

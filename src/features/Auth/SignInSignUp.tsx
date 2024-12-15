@@ -3,10 +3,10 @@ import SignIn from './SignIn.js';
 import SignUp from './SignUp.js';
 // import { useNavigate } from 'react-router-dom';
 // import checkToken from '../../Fetch/func/CheckToken.js';
-import { useAppSelector } from '@/hooks/useAppSelector.js';
+import { useAppSelector } from '@/shared/hooks/useAppSelector.js';
 
-function SignInSignUp() {
-  const isSign = useAppSelector((state) => state.sign.isSign);
+const SignInSignUp = () => {
+  const isSign = useAppSelector((state) => state.auth.isSign);
   //   const navigate = useNavigate();
 
   //   useEffect(() => {
@@ -22,6 +22,6 @@ function SignInSignUp() {
       {isSign === 'in' ? <SignIn /> : <SignUp />}
     </div>
   );
-}
+};
 
 export default SignInSignUp;

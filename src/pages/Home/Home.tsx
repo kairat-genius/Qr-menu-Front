@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import styles from './Home.module.scss';
-import Header from '@/components/Header/Header';
+import Header from '@/shared/components/Header/Header';
 import IconMenu from '@/assets/svg/IconMenu';
 import IconSetting from '@/assets/svg/IconSetting';
 import IconTable from '@/assets/svg/IconTable';
 import { SupportIcon } from '@/assets/SupportIcon.jsx';
-import LogoImg from '@/components/LogoImg/LogoImg';
+import LogoImg from '@/shared/components/LogoImg/LogoImg';
 // import { useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
 // import checkToken from '../../Fetch/func/CheckToken.js';

@@ -7,7 +7,7 @@ import { lazy } from 'react';
 const Home = lazy(() => import('@/pages/Home/Home'));
 const Support = lazy(() => import('@/pages/Support/Support'));
 
-export default function Router() {
+const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />}>
@@ -17,4 +17,6 @@ export default function Router() {
       </Route>
     </Routes>
   );
-}
+};
+
+export default Router;

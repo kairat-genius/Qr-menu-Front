@@ -1,6 +1,7 @@
-import CustomButton from '@/components/CustomButton/CustomButton';
-import { AppLayout } from '../../layouts/AppLayout/AppLayout';
-function Support() {
+import CustomButton from '@/shared/components/CustomButton/CustomButton';
+import AppLayout from '../../layouts/AppLayout/AppLayout';
+
+const Support = () => {
   return (
     <AppLayout>
       <div className="block-title">
@@ -13,6 +14,6 @@ function Support() {
       </div>
     </AppLayout>
   );
-}
+};
 
 export default Support;

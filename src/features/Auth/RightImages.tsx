@@ -1,8 +1,8 @@
 import signImages from '@/utils/signImages';
-import { useAppSelector } from '@/hooks/useAppSelector';
+import { useAppSelector } from '@/shared/hooks/useAppSelector';
 
-function RightImages() {
-  const isSign = useAppSelector((state) => state.sign.isSign);
+const RightImages = () => {
+  const isSign = useAppSelector((state) => state.auth.isSign);
 
   return (
     <>
@@ -46,5 +46,5 @@ function RightImages() {
       </div>
     </>
   );
-}
+};
 export default RightImages;

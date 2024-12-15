@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 // import HeaderSystem from '../../components/Header/HeaderSystem.jsx';
 // import { Sidebar } from '../../components/Sidebar/Sidebar.jsx';
 
-function Dashboard() {
+const Dashboard = () => {
   return (
     <div>
       <Suspense>
@@ -14,5 +14,5 @@ function Dashboard() {
       {/* <footer>Hello colleagues! Let's get to work!</footer> */}
     </div>
   );
-}
+};
 export default Dashboard;

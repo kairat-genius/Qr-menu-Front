@@ -1,11 +1,11 @@
-import '@/Sign.css';
+import './Sign.css';
 import RightImages from '@/features/Auth/RightImages.js';
 import SignInSignUp from '@/features/Auth/SignInSignUp.js';
 import SvgCircle from '@/features/Auth/SvgCircle';
-import { useAppSelector } from '@/hooks/useAppSelector';
+import { useAppSelector } from '@/shared/hooks/useAppSelector';
 
-function Sign() {
-  const isSign = useAppSelector((state) => state.sign.isSign);
+const Sign = () => {
+  const isSign = useAppSelector((state) => state.auth.isSign);
   console.log(isSign);
 
   return (
@@ -23,6 +23,6 @@ function Sign() {
       </main>
     </>
   );
-}
+};
 
 export default Sign;

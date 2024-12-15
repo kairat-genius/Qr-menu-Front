@@ -35,6 +35,7 @@ export default [
       'react/react-in-jsx-scope': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       'prettier/prettier': ['error', { endOfLine: 'auto' }],
+      'react/prop-types': 'off',
     },
   },
 ];
