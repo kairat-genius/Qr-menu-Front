@@ -1,5 +1,5 @@
-import CustomButton from '@/shared/components/CustomButton/CustomButton';
-import AppLayout from '../../layouts/AppLayout/AppLayout';
+import CustomButton from '@/components/UI/CustomButton/CustomButton';
+import AppLayout from '../../hoc/loyouts/AppLayout/AppLayout';
 
 const Support = () => {
   return (

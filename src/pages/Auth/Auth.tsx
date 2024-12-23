@@ -1,27 +1,25 @@
 import './Auth.css';
-import RightImages from '@/features/Auth/RightImages.js';
-import SignInSignUp from '@/features/Auth/SignInSignUp.js';
-import SvgCircle from '@/features/Auth/SvgCircle';
-import { useAppSelector } from '@/shared/hooks/useAppSelector';
+import RightImages from '@/components/Auth/RightImages.js';
+import SignInSignUp from '@/components/Auth/SignInSignUp.js';
+import SvgCircle from '@/components/Auth/SvgCircle';
+import { useAppSelector } from '@/hooks/useAppSelector';
 
-const Auth = () => {
+const Auth: React.FC = () => {
   const isSign = useAppSelector((state) => state.auth.isSign);
   console.log(isSign);
 
   return (
-    <>
-      <main>
-        <div id="sign">
-          {isSign === 'in' || isSign === 'up' ? (
-            <SignInSignUp />
-          ) : (
-            isSign === 'reset' && <SvgCircle />
-          )}
-        </div>
+    <main>
+      <div id="sign">
+        {isSign === 'in' || isSign === 'up' ? (
+          <SignInSignUp />
+        ) : (
+          isSign === 'reset' && <SvgCircle />
+        )}
+      </div>
 
-        {isSign === 'reset' && <RightImages />}
-      </main>
-    </>
+      {isSign === 'reset' && <RightImages />}
+    </main>
   );
 };
 

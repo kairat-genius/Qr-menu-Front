@@ -1,10 +1,10 @@
 import { useState } from 'react';
 // import TableQr from '../../layouts/TableQr/TableQr.jsx';
-import CustomButton from '@/shared/components/CustomButton/CustomButton.js';
+import CustomButton from '@/components/UI/CustomButton/CustomButton.js';
 import styles from './Tables.module.scss';
-import AppLayout from '@/layouts/AppLayout/AppLayout.js';
-import TableContainer from '@/features/TablesPage/TablesContainer/TablesContainer';
-import CreateTableModal from '@/features/TablesPage/CreateTableModal/CreateTableModal';
+import AppLayout from '@/hoc/loyouts/AppLayout/AppLayout.js';
+import TableContainer from '@/components/Tables/TablesContainer/TablesContainer';
+import CreateTableModal from '@/components/Tables/CreateTableModal/CreateTableModal';
 function Table() {
   // const [tableState, setTableState] = useState({
   //   id: null,

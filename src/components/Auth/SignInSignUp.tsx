@@ -3,7 +3,7 @@ import SignIn from './SignIn.js';
 import SignUp from './SignUp.js';
 // import { useNavigate } from 'react-router-dom';
 // import checkToken from '../../Fetch/func/CheckToken.js';
-import { useAppSelector } from '@/shared/hooks/useAppSelector.js';
+import { useAppSelector } from '@/hooks/useAppSelector.js';
 
 const SignInSignUp = () => {
   const isSign = useAppSelector((state) => state.auth.isSign);

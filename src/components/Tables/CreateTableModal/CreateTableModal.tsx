@@ -1,5 +1,5 @@
 import styles from './CreateTableModal.module.scss';
-import CustomButton from '@/shared/components/CustomButton/CustomButton';
+import CustomButton from '@/components/UI/CustomButton/CustomButton';
 import { useState } from 'react';
 // import { TABLES_CREATE, COOKIE_KEY } from '../../Fetch/settings';
 // import Cookies from 'js-cookie';

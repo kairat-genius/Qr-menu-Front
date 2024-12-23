@@ -1,5 +1,5 @@
 import signImages from '@/utils/signImages';
-import { useAppSelector } from '@/shared/hooks/useAppSelector';
+import { useAppSelector } from '@/hooks/useAppSelector';
 
 const RightImages = () => {
   const isSign = useAppSelector((state) => state.auth.isSign);

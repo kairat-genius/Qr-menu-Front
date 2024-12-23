@@ -1,6 +1,6 @@
 import styles from './AppLayout.module.scss';
-import HeaderSystem from '@/shared/components/Header/HeaderSystem';
-import Sidebar from '@/shared/components/Sidebar/Sidebar';
+import HeaderSystem from '@/components/Home/Header/HeaderSystem';
+import Sidebar from '@/components/Home/Sidebar/Sidebar';
 import { useLocation } from 'react-router-dom';
 
 interface AppLayoutProps {
