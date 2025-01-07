@@ -1,7 +1,7 @@
 import CustomButton from '@/components/UI/CustomButton/CustomButton';
 import AppLayout from '../../hoc/loyouts/AppLayout/AppLayout';
 
-const Support = () => {
+const Support: React.FC  = () => {
   return (
     <AppLayout>
       <div className="block-title">

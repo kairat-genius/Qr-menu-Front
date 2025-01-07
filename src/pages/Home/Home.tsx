@@ -10,7 +10,7 @@ import LogoImg from '@/components/Home/LogoImg/LogoImg';
 // import { useNavigate } from 'react-router-dom';
 // import checkToken from '../../Fetch/func/CheckToken.js';
 
-const Home = () => {
+const Home: React.FC  = () => {
   //   const navigate = useNavigate();
 
   // let restaurantLogo;
@@ -30,7 +30,7 @@ const Home = () => {
         <div className={styles.home_logo}>
           <LogoImg />
         </div>
-        <Link to='/tables' style={{ textDecoration: 'none' }}>
+        <Link to='./tables' style={{ textDecoration: 'none' }}>
           <button className={styles.button_page}>
             <div className={styles.home_vector}>
               <IconTable />
@@ -39,7 +39,7 @@ const Home = () => {
           </button>
         </Link>
 
-        <Link to='/menu' style={{ textDecoration: 'none' }}>
+        <Link to='./menu' style={{ textDecoration: 'none' }}>
           <button className={styles.button_page}>
             <div className={styles.home_vector}>
               <IconMenu />
@@ -48,7 +48,7 @@ const Home = () => {
           </button>
         </Link>
 
-        <Link to='/settings' style={{ textDecoration: 'none' }}>
+        <Link to='./settings' style={{ textDecoration: 'none' }}>
           <button className={styles.button_page}>
             <div className={styles.home_vector}>
               <IconSetting />
@@ -57,7 +57,7 @@ const Home = () => {
           </button>
         </Link>
 
-        <Link to='/support' style={{ textDecoration: 'none' }}>
+        <Link to='./support' style={{ textDecoration: 'none' }}>
           <button className={styles.button_page}>
             <div className={styles.home_vector} style={{ color: 'white' }}>
               <SupportIcon />

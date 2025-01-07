@@ -5,7 +5,8 @@ import styles from './Tables.module.scss';
 import AppLayout from '@/hoc/loyouts/AppLayout/AppLayout.js';
 import TableContainer from '@/components/Tables/TablesContainer/TablesContainer';
 import CreateTableModal from '@/components/Tables/CreateTableModal/CreateTableModal';
-function Table() {
+
+const Tables: React.FC  = () => {
   // const [tableState, setTableState] = useState({
   //   id: null,
   //   quantity: 0,
@@ -47,4 +48,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default Tables;
