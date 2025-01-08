@@ -1,71 +1,22 @@
-import { Link } from 'react-router-dom';
-import styles from './Home.module.scss';
+import CostSavings from '@/components/Home/CostSavings/CostSavings';
+import Footer from '@/components/Home/Footer/Footer';
 import Header from '@/components/Home/Header/Header';
-import IconMenu from '@/assets/svg/IconMenu';
-import IconSetting from '@/assets/svg/IconSetting';
-import IconTable from '@/assets/svg/IconTable';
-import { SupportIcon } from '@/assets/SupportIcon.jsx';
-import LogoImg from '@/components/Home/LogoImg/LogoImg';
-// import { useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import checkToken from '../../Fetch/func/CheckToken.js';
+import { Hero } from '@/components/Home/Hero/Hero';
+import JoinUs from '@/components/Home/JoinUs/JoinUs';
+import MenuOptions from '@/components/Home/MenuOptions/MenuOptions';
+import Container from '@/hoc/Container/Container';
 
-const Home: React.FC  = () => {
-  //   const navigate = useNavigate();
-
-  // let restaurantLogo;
-  //   useEffect(() => {
-  //     checkToken(navigate);
-  //   }, [navigate]);
-
+const Home: React.FC = () => {
   return (
-    <div className={styles.home_page}>
-      <Header />
-      <div className={styles.home_wrap}>
-        <div className={styles.home_title}>
-          <h1>Welcome</h1>
-          <h3>to your restourant account </h3>
-        </div>
-
-        <div className={styles.home_logo}>
-          <LogoImg />
-        </div>
-        <Link to='./tables' style={{ textDecoration: 'none' }}>
-          <button className={styles.button_page}>
-            <div className={styles.home_vector}>
-              <IconTable />
-            </div>
-            Table
-          </button>
-        </Link>
-
-        <Link to='./menu' style={{ textDecoration: 'none' }}>
-          <button className={styles.button_page}>
-            <div className={styles.home_vector}>
-              <IconMenu />
-            </div>
-            Menu
-          </button>
-        </Link>
-
-        <Link to='./settings' style={{ textDecoration: 'none' }}>
-          <button className={styles.button_page}>
-            <div className={styles.home_vector}>
-              <IconSetting />
-            </div>
-            Settings
-          </button>
-        </Link>
-
-        <Link to='./support' style={{ textDecoration: 'none' }}>
-          <button className={styles.button_page}>
-            <div className={styles.home_vector} style={{ color: 'white' }}>
-              <SupportIcon />
-            </div>
-            Support
-          </button>
-        </Link>
-      </div>
+    <div>
+      <Container>
+        <Header />
+        <Hero />
+        <MenuOptions />
+        <CostSavings />
+        <JoinUs />
+      </Container>
+      <Footer />
     </div>
   );
 };

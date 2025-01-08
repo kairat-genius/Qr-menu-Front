@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
-import styles from './Header.module.scss';
-// import { logout } from './logout/exit';
 
-const Header = () => {
-  //onClick={logout}
+
+const Header: React.FC = () => {
   return (
-    <>
+    <div>
+      <p>Logo</p>
       <div>
-        <Link to={'/'} className={styles.header_link}>
-          <b className={styles.header_log}>Log out</b>
-        </Link>
+        <p>language 1</p>
+        <p>language 2</p>
       </div>
-    </>
+      <Link to="login">
+        <button>Sing in</button>
+      </Link>
+    </div>
   );
 };
 export default Header;
